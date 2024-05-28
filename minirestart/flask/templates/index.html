@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fire State Checker</title>
+    <style>
+        body {
+            background-image: url('https://img.freepik.com/premium-photo/forest-fire-with-trees-fire-generative-ai_438099-11271.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            margin-bottom: 50px;
+        }
+        form {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        label, input {
+            display: block;
+            margin: 10px 0;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        a {
+            display: block;
+            margin-top: 20px;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #008CBA;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: #007BB5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fire State Checker</h1>
+    <form action="/predict" method="post">
+        <label for="size">Size:</label>
+        <input type="text" id="size" name="size"><br><br>
+
+        <label for="fuel">Fuel:</label>
+        <input type="text" id="fuel" name="fuel"><br><br>
+
+        <label for="distance">Distance:</label>
+        <input type="text" id="distance" name="distance"><br><br>
+
+        <label for="decibel">Decibel:</label>
+        <input type="text" id="decibel" name="decibel"><br><br>
+
+        <label for="airflow">Airflow:</label>
+        <input type="text" id="airflow" name="airflow"><br><br>
+
+        <label for="frequency">Frequency:</label>
+        <input type="text" id="frequency" name="frequency"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    
+</body>
+</html>
